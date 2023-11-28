@@ -1,0 +1,7 @@
+asgiref
+Django
+django-cleanup
+django-crispy-forms
+Pillow
+pytz
+sqlparse
