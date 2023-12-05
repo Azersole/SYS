@@ -80,11 +80,17 @@ WSGI_APPLICATION = 'pollster.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+        'ENGINE': 'sql_server.pyodbc',
+        'NAME': 'quiz_cloud',
+        'USER': 'djqqrvlwds',
+        'PASSWORD': '123',
+        'HOST': 'quizcloud-server.mysql.database.azure.com',
+        'PORT': '',
+        'OPTIONS': {
+            'driver': 'ODBC Driver 13 for SQL Server',
+        },
+    },
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
