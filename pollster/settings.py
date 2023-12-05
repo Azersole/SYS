@@ -81,16 +81,13 @@ WSGI_APPLICATION = 'pollster.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'sql_server.pyodbc',
-        'NAME': 'quiz_cloud',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'mydatabase',
         'USER': 'djqqrvlwds',
         'PASSWORD': '123',
         'HOST': 'quizcloud-server.mysql.database.azure.com',
-        'PORT': '',
-        'OPTIONS': {
-            'driver': 'ODBC Driver 13 for SQL Server',
-        },
-    },
+        'PORT': '5432',
+    }
 }
 
 
